@@ -277,7 +277,7 @@ kubectl version --client=true
 
 ```bash
 mkdir baremetal && cd baremetal
-gsutil cp gs://anthos-baremetal-release/bmctl/{{anthos-ver}}/linux-amd64/bmctl .
+gcloud storage cp gs://anthos-baremetal-release/bmctl/{{anthos-ver}}/linux-amd64/bmctl .
 chmod a+x bmctl
 sudo mv bmctl /usr/local/sbin/
 bmctl version
